@@ -1,0 +1,287 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} 
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: Poppins;
+    background-color: black;
+    background-image: linear-gradient(to right,
+     #0f0c29, #302b63, #24243e);
+     
+}
+
+.wrapper {
+    min-height: 100vh;
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav ul{
+    
+    display:flex;
+    justify-content: space-between;
+    padding: 2rem 0; 
+    list-style: none;
+    align-items: center;
+
+}
+
+nav a{
+    color:whitesmoke;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+nav a:hover{
+    font-size: larger;
+    color:silver;
+    transition: 0.3s;
+}
+
+#search{
+    border-radius: 20px;
+    width:300px;
+    height:40px;
+    padding-left: 50px;
+    font-size:20px ;
+}
+
+#logo{
+    
+    font-family: 'Gabarito', sans-serif;
+    letter-spacing: 2px;
+}
+
+.fa-magnifying-glass{
+    position: relative;
+    right: 280px;
+    top:3px;
+    font-size: 20px;
+}
+
+.fa-bullhorn{
+    color:whitesmoke;
+    margin-right: 0.3rem;
+    margin-left: 0rem;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 25px 0;
+  }
+  .footer-section h2{
+    font-size: 18px;
+    font-weight: lighter;
+  }
+  
+.socialmedia-icons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    
+}
+
+.socialmedia-icons .icon:hover{
+    transform: scale(1.6);
+    color:silver;
+    transition: 0.3s;
+}
+
+.icon {
+    color:whitesmoke;
+}
+  
+.address {
+    color: white;
+  }
+h1{
+    text-align: start;
+    color: white;
+    font-size: 86px;
+    font-family: 'Dela Gothic One', sans-serif;
+    margin: 0;
+    line-height: 1.2em;
+}
+#header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-left: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+article{
+    color: white;
+    margin-top: 2rem;
+    padding-left: 1.5rem;
+    font-weight: lighter;
+    max-width: 40rem;
+}
+article > h2{
+    font-size: 18px;
+    letter-spacing: 0.3rem;
+    width: 70%; 
+}
+article > p{
+    margin-top: 1rem;
+    font-size: 14px;
+    width: 70%;
+}
+.promotion{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 5rem;
+    margin-top: 2rem;
+
+}
+img{
+    width: 100%;
+    max-width: 627px;
+    height: auto;
+}
+.promotion > h2{
+    color: white;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 24px;
+}
+#book_button{
+    width: 11rem;
+    height: 3rem;
+    border-radius: 10px;
+    background: transparent;
+    border-width: 0;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+    margin-left: 1.3rem;
+}
+#book_button:hover{
+    background: linear-gradient(rgb(21, 13, 107) 1.1%,
+     rgb(188, 16, 80) 130.5%);
+     transition: 0.5s;
+     transform: scale(1.1);
+}
+#main_page{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#main_photo{
+    border-radius: 50px;
+    filter: grayscale(100);
+}
+#photo_div{
+    margin-top: 2rem;
+}
+#mainContent{
+    margin-left: 0;
+}
+
+@media only screen and (max-width: 990px) and (min-width: 700px){
+    nav a{
+        font-size: 15px;
+    }
+    nav ul{
+        padding: 1rem;
+    }
+    #logo{
+        font-size: 14px;
+        padding-left: 0.1rem;
+    }
+    #search{
+        border-radius: 20px;
+        width:200px;
+        height:40px;
+        padding-left: 2rem;
+    }
+    .fa-magnifying-glass{
+        right: 180px;
+    }
+    .wrapper{
+        padding: 2.5rem;
+    }
+    #mainContent{
+        margin-left: 3rem;
+    }
+    #main_page{
+        flex-direction: column;
+        margin-left: 1rem;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    nav a{
+        font-size: 15px;
+    }
+    nav ul{
+        padding: 1rem;
+    }
+    #logo{
+        font-size: 14px;
+        padding-left: 0.1rem;
+    }
+    #search{
+        display: none;
+    }
+    .fa-magnifying-glass{
+        display: none;
+    }
+    .wrapper{
+        padding: 0.4rem;
+    }
+    h1{
+        font-size: 52px;
+    }
+    #main_page{
+        flex-direction: column;
+        margin-left: 1rem;
+        align-items: center;
+    }
+    article{
+        padding: 0;
+    }
+    article > h2{
+        width: 80%;
+        font-size: 14px;
+    }
+    article > p{
+        font-size: 12px;
+        width: 80%;
+    }
+    #promotion{
+        justify-content: flex-start;
+        flex-direction: column;
+        max-width: 100vw;
+    }
+    #book_button{
+        margin: 0;
+    }
+    .footer-section h2{
+        font-size: 12px;
+        font-weight: lighter;
+      }
+    .footer-section{
+        justify-content: space-evenly;
+    }
+    .promotion > h2{
+        font-size: 15px;
+    }
+
+
+}
